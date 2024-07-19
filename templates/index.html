@@ -68,9 +68,10 @@
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
           <li><a class="nav-link scrollto" href="{% url 'departments' %}">Departments</a></li>
           <li><a class="nav-link scrollto" href="{% url 'doctors' %}">Doctors</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href=""><span>Admin Section</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="#">Drop Down 1</a></li>
+              <li><a href="{% url 'upload' %}">Upload</a></li>
+              <li><a href="{% url 'image' %}">View Doctors</a></li>
               <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
                   <li><a href="#">Deep Drop Down 1</a></li>
@@ -97,6 +98,7 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="hero">
+
     <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
       <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
@@ -106,7 +108,8 @@
         <!-- Slide 1 -->
         <div class="carousel-item active" style="background-image: url({% static 'assets/img/slide/slide-1.jpg' %})">
           <div class="container">
-            <h2>Welcome to <span>Medix</span></h2>
+
+            <h2>Welcome {{ members.username }} to <span>Medix</span></h2>
             <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel.</p>
             <a href="#about" class="btn-get-started scrollto">Read More</a>
           </div>

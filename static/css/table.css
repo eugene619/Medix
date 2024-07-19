@@ -1,0 +1,26 @@
+table,th,td{
+    border: 2px solid black;
+    border-collapse: collapse;
+    margin: 10px;
+}
+
+th,td{
+    padding: 50px;
+}
+
+img{
+    width: 150px;
+    height: 150px;
+}
+
+.btn1{
+    color: white;
+    background-color: orange;
+    height: 40px;
+    width: 40px;
+}
+
+.btn2{
+    color: white;
+    background-color: orange;
+}

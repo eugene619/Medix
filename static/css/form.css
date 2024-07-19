@@ -1,0 +1,16 @@
+form{
+    background-color: white;
+    padding: 50px;
+    width: 70%;
+    margin: auto;
+}
+
+h2{
+   text-align: center;
+}
+
+body{
+    background-image: url("../assets/images/bi.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
